@@ -5,14 +5,14 @@ import pandas as pd
 
 
 def get_list_of_slices(list_size: int) -> list:
-    '''
+    """
     Generates a list of random file names of the dataset of spotify's playlists
 
     Parameters:
         list_size (int): size of the list of slices
     Output:
         slices2use (list): list of slices paths
-    '''
+    """
     try:
         from numpy.random import randint
     except ModuleNotFoundError:
@@ -36,14 +36,14 @@ def get_list_of_slices(list_size: int) -> list:
 
 
 def list_slices_filepaths(slices_path: str) -> list:
-    '''
+    """
     Generates a list of file names of the dataset of spotify's playlists saved on data/ repository
 
     Parameters:
         slices_path (str): path to the folder containing the slices
     Output:
         slices2use (list): list of slices paths
-    '''
+    """
     try:
         from os import listdir
     except ModuleNotFoundError:
@@ -58,14 +58,14 @@ def list_slices_filepaths(slices_path: str) -> list:
 
 
 def jsonToCSV(slices2use: list) -> None:
-    '''
+    """
     Converts the json files of the dataset of spotify's playlists  on 'data/' to csv files
 
     Parameters:
         slices2use (list): list of slices paths
     Output:
         None
-    '''
+    """
     for slice_path in slices2use:
         artist_playlist_array = []
 
