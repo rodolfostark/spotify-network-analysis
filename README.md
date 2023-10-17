@@ -1,5 +1,6 @@
 # Spotify Network Analysis
 This project aims to explore and analyse the network extracted from spotify's plalyists data from the aicrowd dataset [spotify-million-playlist-dataset-challenge](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge).
+Using Gephi an interactive view of the Spotify playlists could be generated and exported to a web application that is hosted at this [address](https://rodolfostark.github.io/spotify-network-analysis/network/).
 
 ## Built With
 
